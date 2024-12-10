@@ -10,7 +10,7 @@ else
     echo "srcipt will be execute and will check netstat"
  fi
 
- dnf install mysql -y
+ dnf uninstall mysql -y
 if [ $? ne 0 ]
 then 
     echo "installation of mysql id failed "
