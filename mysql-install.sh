@@ -8,3 +8,6 @@ then
 else
     echo "srcipt will be execute and will check netstat"
  fi
+
+ dnf install mysql -y
+ 
