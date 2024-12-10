@@ -10,13 +10,14 @@ else
     echo "srcipt will be execute and will check netstat"
  fi
 
- dnf remove mysql -y
+ dnf install mysql -y
 if [ $? ne 0 ]
 then 
     echo "installation of mysql id failed "
     exit 1
 else
     echo "installation is success"
+fi
 
 dnf install git -y
 if [ $? ne 0 ]
@@ -25,3 +26,4 @@ then
     exit 1
 else
     echo "installation is success"
+fi
