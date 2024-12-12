@@ -3,7 +3,7 @@
 echo "hello worlds"
 
 #Declare a variables
-USER=$(id-u)
+USER=$(id -u)
 
 if [ USER ne 0]
 then 
