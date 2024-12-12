@@ -13,3 +13,5 @@ else
     echo "this script will work"
 
 fi
+
+dnf install mysql -y
