@@ -15,12 +15,12 @@ else
 
 fi
 
-dnf install mysql -y
+dnf install mysqlr -y
 
 if [ $? -ne 0 ]
 then 
     echo "installation is fail"
-
+    exit 1
 else 
     echo "installation is success"
 fi
