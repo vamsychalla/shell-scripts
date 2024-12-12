@@ -3,10 +3,13 @@
 echo "hello worlds"
 
 #Declare a variables
+USER=$(id-u)
 
-echo "please enter name1"
-read NAME1
-echo "enter name2"
-read NAME2
-echo "$NAME1:: Hello  jaffa $NAME2, how are you"
-echo "$NAME2:: Hello Jaffa $NAME1, I am OK"
+if [ USER ne 0]
+then 
+    echo "this script will not work, kindly run this script as a root user then only it will work"
+    
+else
+    echo "this script will work"
+
+fi
